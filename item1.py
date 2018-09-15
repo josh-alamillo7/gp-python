@@ -32,8 +32,11 @@ def remove_empty_lists(input_list):
         emptied_list = remove_empty_lists(copy_element)
         input_list[curr_index] = emptied_list
     curr_index = curr_index + 1
-  
+
   return input_list
 
 print remove_empty_lists([[], 4, [], [[], 8, []], 'hey'])
+#should print [4, [8], 'hey']
 print remove_empty_lists([[[]], [[[]]], [7, [[]]], [8, []], [[2, []], [], 9]])
+#should print [[7], [8], [[2], 9]]
+
